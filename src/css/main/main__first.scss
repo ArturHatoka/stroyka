@@ -1,0 +1,14 @@
+.main__first{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../../src/img/bg-1.jpg") center no-repeat;
+  height: 650px;
+  margin-top: -20px;
+  z-index: 99;
+  width: 100%;
+  &--wrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+}

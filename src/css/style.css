@@ -1,0 +1,170 @@
+*, *:after, *:before {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  z-index: 1;
+  scroll-behavior: smooth;
+  background: url("../../src/img/bg_adv.gif"); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body, header, main, footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background: white; }
+
+.header__info {
+  display: flex;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto; }
+  .header__info__logo {
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .header__info__logo img {
+      position: relative;
+      display: flex;
+      height: 100%; }
+  .header__info__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .header__info__time {
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    .header__info__time span {
+      margin: 3px 0; }
+  .header__info__phone {
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    .header__info__phone a {
+      cursor: pointer;
+      margin: 3px 0; }
+      .header__info__phone a:before {
+        padding-right: 5px;
+        position: relative;
+        content: url("../../src/img/icon__phone.png"); }
+  .header__info__request {
+    position: relative;
+    display: flex; }
+    .header__info__request button {
+      background: inherit;
+      border: 2px solid #be291d;
+      color: #be291d;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 0.9rem; }
+      .header__info__request button:hover {
+        box-shadow: 0 0 5px 0 #be291d; }
+
+.header__nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  background: linear-gradient(0deg, #be291d 45%, rgba(190, 41, 29, 0.56) 100%);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  z-index: 100; }
+  .header__nav--menu {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0; }
+    .header__nav--menu__point {
+      padding: 10px 0;
+      cursor: pointer; }
+      .header__nav--menu__point--link {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: white;
+        font-size: 0.9rem; }
+        .header__nav--menu__point--link:hover {
+          text-decoration: underline; }
+        .header__nav--menu__point--link.active {
+          text-decoration: underline; }
+      .header__nav--menu__point--popup {
+        position: absolute;
+        width: max-content;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        background: #ffffff;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-15px, 15px);
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; }
+        .header__nav--menu__point--popup.active {
+          position: absolute;
+          width: max-content;
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          padding: 0;
+          background: #ffffff;
+          align-items: center;
+          justify-content: center;
+          transform: translate(-15px, 15px); }
+        .header__nav--menu__point--popup__point {
+          padding: 5px 15px; }
+          .header__nav--menu__point--popup__point--link {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 500; }
+            .header__nav--menu__point--popup__point--link:hover {
+              text-decoration: underline; }
+
+.main__first {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../src/img/bg-1.jpg") center no-repeat;
+  height: 650px;
+  margin-top: -20px;
+  z-index: 99;
+  width: 100%; }
+  .main__first--wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between; }

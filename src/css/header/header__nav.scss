@@ -1,0 +1,74 @@
+.header__nav{
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  background: linear-gradient(0deg, $main_color 45%, $main_op_color 100%) ;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  &--menu{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    &__point{
+      padding: 10px 0;
+      cursor: pointer;
+      &--link{
+        text-transform: uppercase;
+        font-weight: 500;
+        color: white;
+        font-size: 0.9rem;
+        &:hover{
+          text-decoration: underline;
+        }
+        &.active{
+          text-decoration: underline;
+        }
+      }
+      &--popup{
+        position: absolute;
+        width: max-content;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        background: #ffffff;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-15px, 15px);
+        display: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        &.active{
+          position: absolute;
+          width: max-content;
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          padding: 0;
+          background: #ffffff;
+          align-items: center;
+          justify-content: center;
+          transform: translate(-15px, 15px);
+        }
+        &__point{
+          padding: 5px 15px;
+          &--link{
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 500;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

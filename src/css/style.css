@@ -670,3 +670,26 @@ header {
   .main__text p {
     font-size: 1.1rem;
     font-weight: 400; }
+.main__map {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0; }
+  .main__map--title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: linear-gradient(0deg, #be291d 45%, rgba(190, 41, 29, 0.56) 100%);
+    border-radius: 5px;
+    color: white; }
+    .main__map--title h2 {
+      font-size: 1.5rem;
+      padding: 15px 35px; }
+  .main__map--box {
+    position: relative;
+    display: flex;
+    width: 100%; }

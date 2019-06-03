@@ -9,4 +9,18 @@ $(document).ready(function () {
             $(this).children('a').removeClass("active");
         }
     );
+
+    $(".request__phone").mask("+7 (999) 999-99-99");
+
+    $('.main__slider--box').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        adaptiveHeight: true,
+        arrows: true,
+        autoplay: false,
+        speed: 1500,
+        infinite: true,
+    });
 });

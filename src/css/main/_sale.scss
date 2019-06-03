@@ -1,4 +1,4 @@
-.main__project{
+&__sale{
   position: relative;
   display: flex;
   width: 100%;
@@ -15,7 +15,7 @@
     align-items: center;
     & h2{
       font-size: 2rem;
-      margin: 25px auto;
+      margin: 5px auto 25px;
       text-align: center;
     }
   }
@@ -35,9 +35,9 @@
     flex-direction: column;
     background: white;
     padding: 15px;
-    margin: 10px 0;
     border-radius: 5px;
     transition: .3s;
+    margin: 10px 0;
     &:hover{
       box-shadow: 0 0 10px 0 lightgrey;
       transition: .3s;

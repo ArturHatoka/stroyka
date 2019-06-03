@@ -63,8 +63,10 @@
       cursor: pointer;
       outline: inherit;
       font-size: 0.9rem;
+      transition: .2s;
       &:hover{
         box-shadow: 0 0 5px 0 $main_color;
+        transition: .2s;
       }
     }
   }

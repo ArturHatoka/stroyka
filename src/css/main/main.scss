@@ -1,2 +1,8 @@
 
 @import "main__first";
+@import "main__types";
+@import "main__privilege";
+@import "main__project";
+.main{
+  @import "preview";
+}

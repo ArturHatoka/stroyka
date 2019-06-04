@@ -1,0 +1,116 @@
+.footer{
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  &__wrap{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    padding: 25px 0;
+  }
+  &__logo{
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    & img{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100px;
+      width: 100%;
+    }
+  }
+  &__address{
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 25px;
+    &--home{
+      font-size: 0.9rem;
+      padding: 5px 0;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+      &:before{
+        padding-right: 5px;
+        position: relative;
+        content: url(../../src/img/adres.png);
+      }
+    }
+    &--mail{
+      font-size: 0.9rem;
+      padding: 5px 0;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+      &:before{
+        padding-right: 5px;
+        position: relative;
+        content: url(../../src/img/email.png);
+      }
+    }
+  }
+  &__phone{
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 25px;
+    & span{
+      padding: 5px 0;
+    }
+    & a{
+      cursor: pointer;
+      padding: 5px 0;
+      font-size: 0.9rem;
+
+      &:before{
+        padding-right: 5px;
+        position: relative;
+        content: url(../../src/img/phone.png);
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &__links{
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    padding: 0 25px;
+    &--development{
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      cursor: pointer;
+      & img{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 40px;
+      }
+    }
+  }
+}

@@ -693,3 +693,100 @@ header {
     position: relative;
     display: flex;
     width: 100%; }
+
+.footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: white;
+  justify-content: center;
+  align-items: center; }
+  .footer__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    padding: 25px 0; }
+  .footer__logo {
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .footer__logo img {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100px;
+      width: 100%; }
+  .footer__address {
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 25px; }
+    .footer__address--home {
+      font-size: 0.9rem;
+      padding: 5px 0;
+      cursor: pointer; }
+      .footer__address--home:hover {
+        text-decoration: underline; }
+      .footer__address--home:before {
+        padding-right: 5px;
+        position: relative;
+        content: url(../../src/img/adres.png); }
+    .footer__address--mail {
+      font-size: 0.9rem;
+      padding: 5px 0;
+      cursor: pointer; }
+      .footer__address--mail:hover {
+        text-decoration: underline; }
+      .footer__address--mail:before {
+        padding-right: 5px;
+        position: relative;
+        content: url(../../src/img/email.png); }
+  .footer__phone {
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 25px; }
+    .footer__phone span {
+      padding: 5px 0; }
+    .footer__phone a {
+      cursor: pointer;
+      padding: 5px 0;
+      font-size: 0.9rem; }
+      .footer__phone a:before {
+        padding-right: 5px;
+        position: relative;
+        content: url(../../src/img/phone.png); }
+      .footer__phone a:hover {
+        text-decoration: underline; }
+  .footer__links {
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    padding: 0 25px; }
+    .footer__links--development {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      cursor: pointer; }
+      .footer__links--development img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 40px; }

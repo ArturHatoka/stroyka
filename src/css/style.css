@@ -72,7 +72,7 @@ header {
     .header__info__phone a {
       cursor: pointer;
       margin: 3px 0; }
-      .header__info__phone a:before {
+      .header__info__phone a:first-child:before {
         padding-right: 5px;
         position: relative;
         content: url("../../src/img/icon__phone.png"); }
@@ -116,14 +116,14 @@ header {
     .header__nav--menu__point {
       padding: 10px 0;
       cursor: pointer; }
-      .header__nav--menu__point--link {
+      .header__nav--menu__point a {
         text-transform: uppercase;
         font-weight: 500;
         color: white;
         font-size: 0.9rem; }
-        .header__nav--menu__point--link:hover {
+        .header__nav--menu__point a:hover {
           text-decoration: underline; }
-        .header__nav--menu__point--link.active {
+        .header__nav--menu__point a.active {
           text-decoration: underline; }
       .header__nav--menu__point--popup {
         position: absolute;
@@ -151,11 +151,11 @@ header {
           transform: translate(-15px, 15px); }
         .header__nav--menu__point--popup__point {
           padding: 5px 15px; }
-          .header__nav--menu__point--popup__point--link {
+          .header__nav--menu__point--popup__point a {
             text-transform: uppercase;
             font-size: 0.9rem;
             font-weight: 500; }
-            .header__nav--menu__point--popup__point--link:hover {
+            .header__nav--menu__point--popup__point a:hover {
               text-decoration: underline; }
 
 .main__first {
@@ -337,6 +337,7 @@ header {
         justify-content: center;
         width: 100%; }
     .main__project--item__title {
+      display: flex;
       font-size: 1.2rem;
       font-weight: 500;
       margin: 10px 0;
@@ -393,6 +394,100 @@ header {
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
         transition: .2s; }
 
+.main__request {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../src/img/back-order.jpg") no-repeat bottom;
+  background-size: cover;
+  align-items: center;
+  justify-content: center; }
+  .main__request--wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    color: #ffffff; }
+  .main__request--title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 50px auto 15px;
+    letter-spacing: 2px; }
+  .main__request--subtitle {
+    position: relative;
+    width: 100%;
+    text-align: center; }
+  .main__request--form {
+    position: relative;
+    display: flex;
+    width: 65%;
+    margin: 50px auto;
+    justify-content: space-around;
+    overflow: hidden; }
+    .main__request--form__field {
+      position: relative;
+      display: flex;
+      border: 0 none;
+      padding: 10px 20px;
+      width: 30%;
+      font-size: 1rem;
+      border-radius: 5px; }
+      .main__request--form__field.button {
+        justify-content: center;
+        font-weight: 500;
+        color: white;
+        background: #be291d;
+        transition: .2s;
+        cursor: pointer; }
+        .main__request--form__field.button:hover {
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+          transition: .2s; }
+    .main__request--form__desc {
+      text-align: center;
+      position: relative;
+      font-size: 0.8rem;
+      font-weight: 400; }
+  .main__request hr {
+    color: #fff;
+    background-color: #fff;
+    border: 0 none;
+    height: 1px;
+    border-radius: 5px; }
+  .main__request--desc {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px auto 15px;
+    font-size: 1.1rem;
+    font-weight: 500; }
+  .main__request--privilege {
+    position: relative;
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 25px; }
+    .main__request--privilege__item {
+      position: relative;
+      display: flex;
+      width: 20%;
+      align-items: center;
+      justify-content: center; }
+      .main__request--privilege__item img {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        max-width: 40px;
+        margin-right: 5px; }
+      .main__request--privilege__item span {
+        font-size: .8rem; }
 .main__preview {
   position: relative;
   display: flex;
@@ -473,6 +568,61 @@ header {
     height: 100%;
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     z-index: 200; }
+.main__know {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../src/img/back-know.jpg") no-repeat center;
+  box-shadow: 0 2px 15px 0 black;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  .main__know--wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; }
+  .main__know--title {
+    position: relative;
+    font-size: 2rem; }
+  .main__know--subtitle {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500; }
+  .main__know--boxes {
+    position: relative;
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 15px 0 5px; }
+    .main__know--boxes__item {
+      position: relative;
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      transition: .3s; }
+      .main__know--boxes__item:hover {
+        box-shadow: 0 0 10px 0 #a0a0a0;
+        transition: .3s; }
+      .main__know--boxes__item img {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center; }
+      .main__know--boxes__item h3 {
+        text-align: center;
+        margin: 10px 0 5px; }
+      .main__know--boxes__item span {
+        font-size: 0.8rem;
+        margin-bottom: 10px; }
 .main__articles {
   position: relative;
   display: flex;
@@ -507,7 +657,7 @@ header {
     flex-direction: column; }
     .main__articles--box__title {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 500;
       margin: 5px 0; }
     .main__articles--box__img {
@@ -524,7 +674,7 @@ header {
         justify-content: center; }
     .main__articles--box__txt {
       align-items: center;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 500;
       margin: 5px 0; }
     .main__articles--box__link {
@@ -543,6 +693,21 @@ header {
       transition: .2s; }
       .main__articles--box__link:hover {
         box-shadow: 0 0 5px 0 #be291d;
+        transition: .2s; }
+    .main__articles--box__all {
+      margin: 20px auto 0;
+      background: #be291d;
+      border: 2px solid #be291d;
+      color: white;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 1rem;
+      transition: .2s; }
+      .main__articles--box__all :hover {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
         transition: .2s; }
 .main__sale {
   position: relative;
@@ -763,7 +928,7 @@ header {
       cursor: pointer;
       padding: 5px 0;
       font-size: 0.9rem; }
-      .footer__phone a:before {
+      .footer__phone a:first-child:before {
         padding-right: 5px;
         position: relative;
         content: url(../../src/img/phone.png); }

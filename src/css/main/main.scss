@@ -4,8 +4,10 @@
 @import "main__privilege";
 @import "main__project";
 .main{
+  @import "request";
   @import "preview";
   @import "slider";
+  @import "know";
   @import "articles";
   @import "sale";
   @import "text";

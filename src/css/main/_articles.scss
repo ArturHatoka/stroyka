@@ -35,7 +35,7 @@
     flex-direction: column;
     &__title{
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 500;
       margin: 5px 0;
     }
@@ -55,7 +55,7 @@
     }
     &__txt{
       align-items: center;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 500;
       margin: 5px 0;
     }
@@ -75,6 +75,23 @@
       transition: .2s;
       &:hover{
         box-shadow: 0 0 5px 0 $main_color;
+        transition: .2s;
+      }
+    }
+    &__all{
+      margin: 20px auto 0;
+      background: #be291d;
+      border: 2px solid #be291d;
+      color: white;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 1rem;
+      transition: .2s;
+      :hover{
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
         transition: .2s;
       }
     }
